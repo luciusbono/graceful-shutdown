@@ -61,5 +61,5 @@ public class Win32Shutdown
 # Enable the shutdown privilege
 [Win32Shutdown]::EnableShutdownPrivilege()
 
-# Shutdown with EWX_SHUTDOWN (0x1) and EWX_HYBRID_SHUTDOWN (0x04000000)
+# Shutdown with EWX_SHUTDOWN (0x1) and EWX_ARSO (0x04000000)
 [Win32Shutdown]::ExitWindowsEx(0x04000001, 0)
